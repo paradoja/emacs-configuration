@@ -1,0 +1,77 @@
+(source gnu)
+(source melpa)
+
+;;; Programming tools
+(depends-on "web-mode")
+(depends-on "haml-mode")
+(depends-on "sass-mode")
+(depends-on "scss-mode")
+(depends-on "yaml-mode")
+(depends-on "flycheck")
+(depends-on "flycheck-cask")
+
+;;;; Coffee
+(depends-on "coffee-mode")
+
+;;;; Clojure
+(depends-on "clojure-mode")
+(depends-on "cider")
+(depends-on "ac-nrepl")
+
+;;;; Go
+(depends-on "go-mode")
+
+;;;; Haskell
+(depends-on "haskell-mode")
+(depends-on "ghci-completion")
+
+;;;; Lisps
+(depends-on "paredit")
+
+;;;; JS
+(depends-on "js2-mode")
+
+;;;; Ruby
+(depends-on "ruby-mode")
+(depends-on "ruby-electric")
+(depends-on "inf-ruby")
+(depends-on "ruby-tools")
+(depends-on "rvm")
+(depends-on "robe")
+
+;;;; Scala
+(depends-on "scala-mode2")
+
+;;;; Scheme
+(depends-on "geiser")
+
+;;; General editing, programming and project tools
+(depends-on "ace-jump-mode")
+(depends-on "perspective")
+(depends-on "auto-complete")
+(depends-on "evil")
+(depends-on "git-blame")
+(depends-on "git-commit-mode")
+(depends-on "git-rebase-mode")
+(depends-on "magit")
+(depends-on "projectile")
+(depends-on "iedit")
+(depends-on "yasnippet")
+(depends-on "highlight-indentation")
+(depends-on "ack-and-a-half")
+(depends-on "wgrep")
+(depends-on "wgrep-ack")
+(depends-on "markdown-mode")
+(depends-on "twittering-mode")
+(depends-on "feature-mode")
+
+;; General emacs tools
+(depends-on "smex")
+(depends-on "undo-tree")
+(depends-on "key-chord")
+(depends-on "w3")
+(depends-on "helm")
+(depends-on "expand-region")
+(depends-on "ecb")
+(depends-on "tabulated-list")
+(depends-on "jabber")

@@ -1,0 +1,9 @@
+session.*
+/home/.emacs.d/url
+/home/.emacs.d/tramp
+/home/.emacs.d/projectile.cache
+/home/.emacs.d/abbrev_defs
+/home/.emacs.d/eshell
+/home/.emacs.d/projectile-bookmarks.eld
+/home/.emacs.d/.cask
+/home/.emacs.d/ac-comphist.dat
