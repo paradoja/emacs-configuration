@@ -2,7 +2,7 @@
 
 ; These would go in jabber.el configuration... if it existed
 (define-key jabber-chat-mode-map (kbd "RET") 'newline)
-(define-key jabber-chat-mode-map [C-return] 'jabber-chat-buffer-send)
+(define-key jabber-chat-mode-map [M-return] 'jabber-chat-buffer-send)
 (add-hook 'jabber-chat-mode-hook 'goto-address)
 
 (defvar hipchat-number "number")
