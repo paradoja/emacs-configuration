@@ -30,3 +30,6 @@
 
 ;;; Scala
 (load-file "~/.emacs.d/prog/scala.el")
+
+;;; Web-mode
+(load-file "~/.emacs.d/prog/web-mode.el")
