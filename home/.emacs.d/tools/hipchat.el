@@ -60,12 +60,15 @@
 (add-to-list 'jabber-alert-message-hooks 'hipchat-alert-mentioned)
 
 ;; We connect to default places
-(defun hipchat ()
+(defun hipchat (&optional _connection)
   (interactive)
   (ignore-errors (jabber-disconnect (hipchat-login-info)))
   (jabber-connect hipchat-username hipchat-server nil nil hipchat-password))
 
-(defun hipchat-auto ()
+(defun hipchat-auto (&optional _connection)
   (interactive)
   (mapc (lambda (room) (hipchat-join room))
         hipchat-auto-join))
+
+(add-hook 'jabber-post-connect-hooks 'hipchat-auto t)
+(add-hook 'jabber-lost-connection-hooks 'hipchat t)
