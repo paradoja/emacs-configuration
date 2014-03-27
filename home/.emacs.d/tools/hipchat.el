@@ -50,7 +50,8 @@
   (insert (concat "@\"" nickname "\" ")))
 
 (defun hipchat-alert-mentioned (from buffer text proposed-alert)
-  (if (string-match hipchat-nick text)
+  (if (or (string-match hipchat-nick text)
+          (string-match "@here" text))
       (progn
         (require 'notifications)
         (let ((title (format "[HC] %s:"
