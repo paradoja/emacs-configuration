@@ -27,3 +27,6 @@
 
 ;;; Flycheck
 (load-file "~/.emacs.d/tools/flycheck.el")
+
+;;; Org-mode
+(load-file "~/.emacs.d/tools/org-mode.el")
