@@ -76,3 +76,4 @@
 (depends-on "ecb")
 (depends-on "tabulated-list")
 (depends-on "jabber")
+(depends-on "flx-ido")
