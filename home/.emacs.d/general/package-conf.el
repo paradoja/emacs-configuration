@@ -10,4 +10,6 @@
             'ruby-tools-mode
             'flycheck-mode
             'ibus-mode
-            'ruby-electric-mode))
+            'ruby-electric-mode
+            'magit-auto-revert-mode
+            'auto-complete-mode))
