@@ -8,3 +8,9 @@
 (semantic-mode 1)
 (require 'malabar-mode)
 (add-to-list 'auto-mode-alist '("\\.java\\'" . malabar-mode))
+
+(load-file
+ (locate-file "malabar-flycheck"
+              (list (file-name-directory
+                     (find-lisp-object-file-name 'malabar-mode 'function)))
+              '(".elc" ".el")))
