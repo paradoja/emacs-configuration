@@ -30,6 +30,3 @@
 
 ;;; Org-mode
 (load-file "~/.emacs.d/tools/org-mode.el")
-
-;;; ack-and-a-half
-(load-file "~/.emacs.d/tools/ack-and-a-half.el")

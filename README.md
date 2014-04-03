@@ -12,6 +12,7 @@ git submodule update
 ## Required programs
 
 - [Ack](http://beyondgrep.com/) is expected to be installed and in the path.
+- Alternatively [the-silver-searcher](https://github.com/ggreer/the_silver_searcher) may be used for faster searches.
 - SHM executable is needed:
 ```
 cd ~/.emacs.d/prog/haskell/structured-haskell-mode

@@ -62,6 +62,8 @@
 (depends-on "ack-and-a-half")
 (depends-on "wgrep")
 (depends-on "wgrep-ack")
+(depends-on "ag")
+(depends-on "wgrep-ag")
 (depends-on "markdown-mode")
 (depends-on "twittering-mode")
 (depends-on "feature-mode")
