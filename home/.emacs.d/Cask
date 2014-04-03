@@ -26,11 +26,14 @@
 (depends-on "haskell-mode")
 (depends-on "ghci-completion")
 
-;;;; Lisps
-(depends-on "paredit")
+;;;; Java
+(depends-on "malabar-mode")
 
 ;;;; JS
 (depends-on "js2-mode")
+
+;;;; Lisps
+(depends-on "paredit")
 
 ;;;; Ruby
 (depends-on "ruby-mode")
@@ -50,7 +53,6 @@
 (depends-on "ace-jump-mode")
 (depends-on "perspective")
 (depends-on "auto-complete")
-(depends-on "evil")
 (depends-on "git-blame")
 (depends-on "git-commit-mode")
 (depends-on "git-rebase-mode")
@@ -60,15 +62,15 @@
 (depends-on "yasnippet")
 (depends-on "highlight-indentation")
 (depends-on "ack-and-a-half")
+(depends-on "ag")
 (depends-on "wgrep")
 (depends-on "wgrep-ack")
-(depends-on "ag")
 (depends-on "wgrep-ag")
 (depends-on "markdown-mode")
-(depends-on "twittering-mode")
 (depends-on "feature-mode")
 
 ;; General emacs tools
+(depends-on "evil")
 (depends-on "smex")
 (depends-on "undo-tree")
 (depends-on "key-chord")
@@ -78,3 +80,4 @@
 (depends-on "ecb")
 (depends-on "tabulated-list")
 (depends-on "jabber")
+(depends-on "twittering-mode")

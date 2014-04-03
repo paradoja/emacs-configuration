@@ -33,3 +33,6 @@
 
 ;;; Web-mode
 (load-file "~/.emacs.d/prog/web-mode.el")
+
+;;; Java
+(load-file "~/.emacs.d/prog/java.el")

@@ -8,3 +8,4 @@ session.*
 /home/.emacs.d/.cask
 /home/.emacs.d/ac-comphist.dat
 /home/.emacs.d/image-dired/
+/home/.emacs.d/srecode-map.el
