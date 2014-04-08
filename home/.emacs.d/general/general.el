@@ -52,8 +52,10 @@
 (set-frame-font "Ubuntu Mono-13")
 
 ;;; Comandos avanzados habilitados
-(put 'set-goal-column 'disabled nil) ; C-x C-n
+(put 'set-goal-column  'disabled nil); C-x C-n
 (put 'narrow-to-region 'disabled nil); C-x n n
+(put 'upcase-region    'disabled nil); C-x C-u
+(put 'downcase-region  'disabled nil); C-x C-l
 
 ;;; Ido http://emacslife.blogspot.com/2008/02/icicles.html
 (require 'ido)
