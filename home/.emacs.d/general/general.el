@@ -79,8 +79,8 @@
 (add-to-list 'sml/replacer-regexp-list '("^~/.homesick/repos/emacs-files.git/home/.emacs.d/" ":ED:"))
 (mapc (lambda (mode)
         (add-to-list 'sml/hidden-modes (format " %s" mode)))
- (list "Projectile" ; projectile-mode
-       "Paredit"    ; paredit-mode
+ (list "Paredit"    ; paredit-mode
+       "FlyC"       ; flycheck-mode
        "Undo-Tree"  ; undo-tree-mode
        "AC"         ; auto-complete-mode
        "yas"        ; yas/minor-mode
@@ -90,8 +90,8 @@
 ; I prefer to invert the colour scheme
 (custom-theme-set-variables
  'smart-mode-line
- '(sml/active-foreground-color "gray60")
- '(sml/active-background-color "#404045")
+ '(sml/active-foreground-color   "gray60")
+ '(sml/active-background-color   "#404045")
  '(sml/inactive-foreground-color "gray60")
  '(sml/inactive-background-color "black"))
 
