@@ -75,7 +75,6 @@
 
 ;;; Smart Mode Line
 (require 'smart-mode-line)
-(setq sml/theme 'dark)
 (sml/setup)
 (add-to-list 'sml/replacer-regexp-list '("^~/.homesick/repos/emacs-files.git/home/.emacs.d/" ":ED:"))
 (mapc (lambda (mode)
@@ -95,6 +94,10 @@
  '(sml/active-background-color   "#404045")
  '(sml/inactive-foreground-color "gray60")
  '(sml/inactive-background-color "black"))
+(setq-default sml/col-number-format  "%3l")
+(setq-default sml/line-number-format "%3l")
+(setq-default sml/numbers-separator  "")
+(setq-default sml/col-number-format  "%3c")
 
 ;;; Cambios en paquetes generales
 (load "~/.emacs.d/general/key-chords")
