@@ -30,3 +30,6 @@
 
 ;;; Org-mode
 (load-file "~/.emacs.d/tools/org-mode.el")
+
+;;; Yasnippet
+(load-file "~/.emacs.d/tools/yasnippets.el")
