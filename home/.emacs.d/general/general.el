@@ -72,6 +72,28 @@
 (setq uniquify-after-kill-buffer-p t) ; rename after killing uniquified
 (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers
 
+;;; Smart Mode Line
+(require 'smart-mode-line)
+(setq sml/theme 'dark)
+(sml/setup)
+(add-to-list 'sml/replacer-regexp-list '("^~/.homesick/repos/emacs-files.git/home/.emacs.d/" ":ED:"))
+(mapc (lambda (mode)
+        (add-to-list 'sml/hidden-modes (format " %s" mode)))
+ (list "Projectile" ; projectile-mode
+       "Paredit"    ; paredit-mode
+       "Undo-Tree"  ; undo-tree-mode
+       "AC"         ; auto-complete-mode
+       "yas"        ; yas/minor-mode
+       "rt"         ; ruby-tools-mode
+       "REl"        ; ruby-electric-mode
+       "MRev"))     ; magit-auto-revert-mode
+; I prefer to invert the colour scheme
+(custom-theme-set-variables
+ 'smart-mode-line
+ '(sml/active-foreground-color "gray60")
+ '(sml/active-background-color "#404045")
+ '(sml/inactive-foreground-color "gray60")
+ '(sml/inactive-background-color "black"))
+
 ;;; Cambios en paquetes generales
-(load "~/.emacs.d/general/package-conf.el")
 (load "~/.emacs.d/general/key-chords")

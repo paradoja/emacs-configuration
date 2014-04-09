@@ -81,3 +81,4 @@
 (depends-on "tabulated-list")
 (depends-on "jabber")
 (depends-on "twittering-mode")
+(depends-on "smart-mode-line")
