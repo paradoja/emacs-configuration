@@ -5,6 +5,7 @@
 ;;; Cambios de configuraciones de teclas
 (global-set-key "\C-w" 'backward-kill-word)
 (global-set-key "\C-x\C-k" 'kill-region)
+(require 'smex)
 (defun call-smex (&optional arg)
   (interactive "P")
   (if arg
