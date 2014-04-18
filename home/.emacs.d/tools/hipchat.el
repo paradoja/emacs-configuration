@@ -1,4 +1,5 @@
 (require 'jabber)
+(require 'notifications)
 
 ; These would go in jabber.el configuration... if it existed
 (define-key jabber-chat-mode-map (kbd "RET") 'newline)
@@ -53,7 +54,6 @@
   (if (or (string-match hipchat-nick text)
           (string-match "@here" text))
       (progn
-        (require 'notifications)
         (let ((title (format "[HC] %s:"
                              (jabber-jid-rostername from))))
          (notifications-notify :title title :body text)))))
