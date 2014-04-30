@@ -19,7 +19,7 @@ cd ~/.emacs.d/prog/haskell/structured-haskell-mode
 cabal install
 ```
 (cabal-install) is of course needed.
-- Maven is required for malabar-mode (for Java development).
+- [Eclim](http://eclim.org/install.html)
 
 ## Other requirements
 

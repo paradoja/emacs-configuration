@@ -27,7 +27,7 @@
 (depends-on "ghci-completion")
 
 ;;;; Java
-(depends-on "malabar-mode")
+(depends-on "emacs-eclim")
 
 ;;;; JS
 (depends-on "js2-mode")
