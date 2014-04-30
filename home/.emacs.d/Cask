@@ -68,6 +68,7 @@
 (depends-on "wgrep-ag")
 (depends-on "markdown-mode")
 (depends-on "feature-mode")
+(depends-on "multiple-cursors")
 
 ;; General emacs tools
 (depends-on "evil")
