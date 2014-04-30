@@ -9,3 +9,5 @@ session.*
 /home/.emacs.d/ac-comphist.dat
 /home/.emacs.d/image-dired/
 /home/.emacs.d/srecode-map.el
+/home/.emacs.d/var/
+/home/.emacs.d/.mc-lists.el
