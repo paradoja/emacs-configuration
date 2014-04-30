@@ -15,7 +15,7 @@
 (defvar hipchat-auto-join '())
 
 ;; Load conf.
-(setq hipchat-configuration "~/.hipchat.el")
+(defvar hipchat-configuration "~/.hipchat.el")
 (with-temp-buffer
   (insert-file-contents-literally hipchat-configuration)
   (eval-buffer))
