@@ -33,3 +33,6 @@
 
 ;;; Yasnippet
 (load-file "~/.emacs.d/tools/yasnippets.el")
+
+;;; Window numbering and chumpy windows
+(load-file "~/.emacs.d/tools/window-navigation.el")

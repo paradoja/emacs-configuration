@@ -14,7 +14,7 @@
 (global-set-key "\M-x" 'call-smex)
 (global-set-key "\C-x\C-m" 'call-smex)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) ; M-x estándar
-(global-set-key (kbd "C-c o") 'occur) ; tb. M-s o durante isearch
+(global-set-key (kbd "C-c C-o") 'occur) ; tb. M-s o durante isearch
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (define-key global-map (kbd "RET") 'newline-and-indent)
 
