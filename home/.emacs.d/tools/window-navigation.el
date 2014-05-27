@@ -24,8 +24,7 @@
           ((get-direction option)
            (window-jump (get-direction option))))))
 
-(global-set-key "\C-xo" 'other-window-directed)
-(global-set-key "\C-co" 'other-window)
+(global-set-key "\C-co" 'other-window-directed)
 
 ;; We remove the default keybindings for window-numbering-mode
 (-dotimes 10
