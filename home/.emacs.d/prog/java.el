@@ -1,6 +1,5 @@
 (require 'eclim)
 (require 'eclimd)
-(global-eclim-mode)
 (defvar eclim-possible-workspaces '("~/curro"))
 
 (add-to-list 'eclim-eclipse-dirs "~/opt/eclipse")
@@ -14,4 +13,11 @@
                   (car valid-paths))))
 
 (require 'ac-emacs-eclim-source)
-(ac-emacs-eclim-config)
+
+(require 'eclim-problems)
+(defun eclim-start ()
+  "Starts the eclim daemon and modes"
+  (interactive)
+  (ac-emacs-eclim-config)
+  (start-eclimd eclimd-default-workspace)
+  (global-eclim-mode))
