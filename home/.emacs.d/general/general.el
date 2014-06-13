@@ -35,6 +35,7 @@
 ; Enhanced rectangle edition, global mark mode and easy register use
 (cua-selection-mode t)
 (setq-default cua-delete-selection nil)
+(winner-mode 1) ; C-c ←, C-c →
 
 ;; Automáticamente marcar como ejecutable scripts
 (add-hook 'after-save-hook
