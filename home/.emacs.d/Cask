@@ -88,6 +88,7 @@
 (depends-on "w3m")
 (depends-on "window-numbering")
 (depends-on "window-jump")
+(depends-on "rotate")
 
 ;; Libraries
 (depends-on "f")    ; Directory and file api

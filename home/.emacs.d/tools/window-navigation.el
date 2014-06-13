@@ -4,9 +4,20 @@
 
 (window-numbering-mode)
 
+(defun do-window-rotation (option)
+  "Rotates the window or layout, or sets a layout."
+  (interactive "crotate: [w] window [l] layout [h] horiz. [v] vert. [j] main-horiz. [b] main-vert. [t] tiled\n")
+  (call-interactively (cond ((char-equal ?w option) #'rotate-window)
+                            ((char-equal ?l option) #'rotate-layout)
+                            ((char-equal ?h option) #'rotate:even-horizontal)
+                            ((char-equal ?v option) #'rotate:even-vertical)
+                            ((char-equal ?j option) #'rotate:main-vertical)
+                            ((char-equal ?b option) #'rotate:main-horizontal)
+                            ((char-equal ?t option) #'rotate:tiled))))
+
 (defun other-window-directed (option arg)
   "Changes the point to the selected window."
-  (interactive "c[o] other window [0-9] go to window 0-9 [hjkl]/[bnpf] go left/bottom/top/right\nP")
+  (interactive "c[o] other window [0-9] go to window 0-9 [hjkl]/[bnpf] go left/bottom/top/right [r] Rotate\nP")
   (cl-flet* ((char-in (char list)
                       (-any? (lambda (current-char) (char-equal char current-char))
                              list))
@@ -22,7 +33,10 @@
            (select-window-by-number (string-to-number (char-to-string option))
                                     arg))
           ((get-direction option)
-           (window-jump (get-direction option))))))
+           (window-jump (get-direction option)))
+          ((char-equal ?r option)
+           (call-interactively #'do-window-rotation)))))
+
 
 (global-set-key "\C-co" 'other-window-directed)
 
