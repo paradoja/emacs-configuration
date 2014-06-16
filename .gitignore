@@ -12,3 +12,4 @@ session.*
 /home/.emacs.d/var/
 /home/.emacs.d/.mc-lists.el
 /home/.emacs.d/prog/workbench.xmi
+/home/.emacs.d/general/custom.el
