@@ -91,6 +91,7 @@
 (depends-on "window-numbering")
 (depends-on "window-jump")
 (depends-on "rotate")
+(depends-on "git-gutter")
 
 ;; Libraries
 (depends-on "f")    ; Directory and file api
