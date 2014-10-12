@@ -19,6 +19,7 @@ cd ~/.emacs.d/prog/haskell/structured-haskell-mode
 cabal install
 ```
 (cabal-install) is of course needed.
+- [Ensime](https://github.com/ensime/ensime-server/wiki/Quick-Start-Guide)
 - [Eclim](http://eclim.org/install.html)
 
 ## Other requirements
