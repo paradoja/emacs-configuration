@@ -19,6 +19,9 @@
 (depends-on "cider")
 (depends-on "ac-nrepl")
 
+;;;; Cyper
+(depends-on "cypher-mode")
+
 ;;;; Go
 (depends-on "go-mode")
 
