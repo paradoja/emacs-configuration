@@ -28,6 +28,7 @@
 ;;;; Haskell
 (depends-on "haskell-mode")
 (depends-on "ghci-completion")
+(depends-on "shm")
 
 ;;;; Java
 (depends-on "emacs-eclim")

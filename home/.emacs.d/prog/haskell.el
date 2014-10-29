@@ -1,8 +1,6 @@
-(add-to-list 'load-path "~/.emacs.d/prog/haskell/structured-haskell-mode/elisp")
-(require 'shm)
-
 (add-hook 'haskell-mode-hook
           (lambda ()
+            (interactive-haskell-mode)
             (turn-on-haskell-doc-mode)
             (turn-on-haskell-indent)
             (capitalized-words-mode t)
