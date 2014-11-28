@@ -49,7 +49,7 @@
 (setq inhibit-startup-message t)
 (setq initial-scratch-message nil)
 (setq custom-theme-directory "~/.emacs.d/themes/")
-(load-theme 'tango-2-modified)
+(load-theme 'tango-2-modified t)
 ; (set-default-font "Inconsolata-13")
 (set-frame-font "Ubuntu Mono-13")
 
