@@ -5,14 +5,9 @@
 ;;; Cambios de configuraciones de teclas
 (global-set-key "\C-w" 'backward-kill-word)
 (global-set-key "\C-x\C-k" 'kill-region)
-(require 'smex)
-(defun call-smex (&optional arg)
-  (interactive "P")
-  (if arg
-      (smex-major-mode-commands)
-    (smex)))
-(global-set-key "\M-x" 'call-smex)
-(global-set-key "\C-x\C-m" 'call-smex)
+(require 'smex) ; Ido for M-x
+(global-set-key "\M-x" 'smex)
+(global-set-key "\C-c\C-m" 'smex-major-mode-commands)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) ; M-x estándar
 (global-set-key (kbd "C-c C-o") 'occur) ; tb. M-s o durante isearch
 (global-set-key (kbd "C-x C-b") 'ibuffer)
