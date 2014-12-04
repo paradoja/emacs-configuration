@@ -31,6 +31,8 @@
 (cua-selection-mode t)
 (setq-default cua-delete-selection nil)
 (winner-mode 1) ; C-c ←, C-c →
+(setq visual-line-fringe-indicators ; Arrows in visual-line-mode
+      '(left-curly-arrow right-curly-arrow))
 
 ;; Automáticamente marcar como ejecutable scripts
 (add-hook 'after-save-hook
@@ -51,8 +53,8 @@
 ;;; Comandos avanzados habilitados
 (put 'set-goal-column  'disabled nil); C-x C-n
 (put 'narrow-to-region 'disabled nil); C-x n n
-(put 'upcase-region    'disabled nil); C-x C-u
-(put 'downcase-region  'disabled nil); C-x C-l
+(put 'upcase-region    'disabled nil); C-x C-u;; M-u upcases word
+(put 'downcase-region  'disabled nil); C-x C-l;; M-u downcases word
 
 ;;; Ido http://emacslife.blogspot.com/2008/02/icicles.html
 (require 'ido)
