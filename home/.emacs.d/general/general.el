@@ -7,6 +7,7 @@
 (global-set-key "\C-x\C-k" 'kill-region)
 (require 'smex) ; Ido for M-x
 (global-set-key "\M-x" 'smex)
+(global-set-key "\C-x\C-m" 'smex)
 (global-set-key "\C-c\C-m" 'smex-major-mode-commands)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) ; M-x estándar
 (global-set-key (kbd "C-c C-o") 'occur) ; tb. M-s o durante isearch
