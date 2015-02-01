@@ -33,13 +33,13 @@
 (setq rcirc-default-full-name "paradoja")
 
 ;; Join these channels at startup.
-(setq rcirc-startup-channels-alist
-      '(("\\.freenode\\.net$" "#emacs" "#rcirc" "#haskell" "#lisp" "#ocaml" "#ruby")
+(setq rcirc-startup-channels
+      '(("\\.freenode\\.net$" )
         ("\\.hispano\\.org")))
 
 ;; Sitio con la información de conexión de forma:
 ;; (setq rcirc-authinfo '(("sitio" nickserv "usuario" "clave")))
-(setq rcirc-authinfo-file-name "~/.authinfo.el")
+(defvar rcirc-authinfo-file-name "~/.authinfo.el")
 (with-temp-buffer
            (insert-file-contents-literally rcirc-authinfo-file-name)
            (goto-char (point-min))
