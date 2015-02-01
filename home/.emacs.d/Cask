@@ -76,6 +76,7 @@
 (depends-on "markdown-mode")
 (depends-on "feature-mode")
 (depends-on "multiple-cursors")
+(depends-on "restclient")
 
 ;; General emacs tools
 (depends-on "evil")
