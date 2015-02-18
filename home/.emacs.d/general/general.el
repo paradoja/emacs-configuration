@@ -7,6 +7,7 @@
 (global-set-key "\C-x\C-k" 'kill-region)
 (require 'smex) ; Ido for M-x
 (global-set-key "\M-x" 'smex)
+(global-set-key "\C-xm" 'smex)
 (global-set-key "\C-x\C-m" 'smex)
 (global-set-key "\C-c\C-m" 'smex-major-mode-commands)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) ; M-x estándar
@@ -34,6 +35,7 @@
 (winner-mode 1) ; C-c ←, C-c →
 (setq visual-line-fringe-indicators ; Arrows in visual-line-mode
       '(left-curly-arrow right-curly-arrow))
+(delete-selection-mode -1)
 
 ;; Automáticamente marcar como ejecutable scripts
 (add-hook 'after-save-hook

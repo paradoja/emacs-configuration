@@ -16,3 +16,4 @@ session.*
 /home/.emacs.d/smex-items
 /home/.emacs.d/jabber-history/
 /home/.emacs.d/ido.last
+/home/.emacs.d/elpa/
