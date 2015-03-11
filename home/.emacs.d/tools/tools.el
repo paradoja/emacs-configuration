@@ -36,3 +36,6 @@
 
 ;;; Window numbering and chumpy windows
 (load-file "~/.emacs.d/tools/window-navigation.el")
+
+;;; EWW
+(load-file "~/.emacs.d/tools/eww.el")
