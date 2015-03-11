@@ -32,10 +32,10 @@
 ; Enhanced rectangle edition, global mark mode and easy register use
 (cua-selection-mode t)
 (setq-default cua-delete-selection nil)
+(delete-selection-mode -1)
 (winner-mode 1) ; C-c ←, C-c →
 (setq visual-line-fringe-indicators ; Arrows in visual-line-mode
       '(left-curly-arrow right-curly-arrow))
-(delete-selection-mode -1)
 
 ;; Automáticamente marcar como ejecutable scripts
 (add-hook 'after-save-hook
@@ -57,7 +57,7 @@
 (put 'set-goal-column  'disabled nil); C-x C-n
 (put 'narrow-to-region 'disabled nil); C-x n n
 (put 'upcase-region    'disabled nil); C-x C-u;; M-u upcases word
-(put 'downcase-region  'disabled nil); C-x C-l;; M-u downcases word
+(put 'downcase-region  'disabled nil); C-x C-l;; M-l downcases word
 
 ;;; Ido http://emacslife.blogspot.com/2008/02/icicles.html
 (require 'ido)
