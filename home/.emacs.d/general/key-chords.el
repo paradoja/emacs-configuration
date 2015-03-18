@@ -7,3 +7,4 @@
 (key-chord-define-global "ºl" 'hl-line-mode)
 (key-chord-define-global "ºj" 'ace-jump-mode)
 (key-chord-define-global "ºk" 'ace-jump-char-mode)
+(key-chord-define-global "º " 'whitespace-mode)
