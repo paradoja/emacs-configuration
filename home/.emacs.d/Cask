@@ -30,6 +30,10 @@
 (depends-on "ghci-completion")
 (depends-on "shm")
 
+;;;; Io
+(depends-on "io-mode")
+(depends-on "io-mode-inf")
+
 ;;;; Java
 (depends-on "emacs-eclim")
 
