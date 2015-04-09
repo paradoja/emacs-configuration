@@ -101,6 +101,7 @@
 (depends-on "window-jump")
 (depends-on "rotate")
 (depends-on "git-gutter")
+(depends-on "hydra")
 
 ;; Libraries
 (depends-on "f")    ; Directory and file api
