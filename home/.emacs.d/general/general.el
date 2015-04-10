@@ -36,6 +36,9 @@
 (winner-mode 1) ; C-c ←, C-c →
 (setq visual-line-fringe-indicators ; Arrows in visual-line-mode
       '(left-curly-arrow right-curly-arrow))
+(require 'guide-key)
+(setq guide-key/guide-key-sequence t) ; Everything
+(guide-key-mode 1)
 
 ;; Automáticamente marcar como ejecutable scripts
 (add-hook 'after-save-hook
