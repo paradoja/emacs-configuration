@@ -36,3 +36,6 @@
 
 ;;; Java
 (load-file "~/.emacs.d/prog/java.el")
+
+;;; CoffeeScript
+(load-file "~/.emacs.d/prog/coffee.el")
