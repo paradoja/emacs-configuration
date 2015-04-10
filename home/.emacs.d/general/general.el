@@ -15,6 +15,11 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (define-key global-map (kbd "RET") 'newline-and-indent)
 (global-set-key (kbd "C-h C-m") 'discover-my-major)
+(require 'visual-regexp)
+(setq vr/match-separator-string ">>")
+(define-key global-map (kbd "C-c r") 'vr/replace)
+(define-key global-map (kbd "C-c q") 'vr/query-replace)
+(define-key global-map (kbd "C-c m") 'vr/mc-mark)
 
 ;;; Servidor
 (setenv "EDITOR" "/usr/bin/emacsclient")

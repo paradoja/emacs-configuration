@@ -105,6 +105,7 @@
 (depends-on "browse-kill-ring")
 (depends-on "guide-key")
 (depends-on "discover-my-major")
+(depends-on "visual-regexp")
 
 ;; Libraries
 (depends-on "f")    ; Directory and file api
