@@ -102,6 +102,7 @@
 (depends-on "rotate")
 (depends-on "git-gutter")
 (depends-on "hydra")
+(depends-on "browse-kill-ring")
 
 ;; Libraries
 (depends-on "f")    ; Directory and file api
