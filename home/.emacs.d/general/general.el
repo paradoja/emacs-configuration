@@ -14,6 +14,7 @@
 (global-set-key (kbd "C-c C-o") 'occur) ; tb. M-s o durante isearch
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (define-key global-map (kbd "RET") 'newline-and-indent)
+(global-set-key (kbd "C-h C-m") 'discover-my-major)
 
 ;;; Servidor
 (setenv "EDITOR" "/usr/bin/emacsclient")

@@ -104,6 +104,7 @@
 (depends-on "hydra")
 (depends-on "browse-kill-ring")
 (depends-on "guide-key")
+(depends-on "discover-my-major")
 
 ;; Libraries
 (depends-on "f")    ; Directory and file api
