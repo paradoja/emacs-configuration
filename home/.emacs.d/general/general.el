@@ -67,6 +67,7 @@
 (put 'narrow-to-region 'disabled nil); C-x n n
 (put 'upcase-region    'disabled nil); C-x C-u;; M-u upcases word
 (put 'downcase-region  'disabled nil); C-x C-l;; M-l downcases word
+(put 'dired-find-alternate-file 'disabled nil); dired a
 
 ;;; Ido http://emacslife.blogspot.com/2008/02/icicles.html
 (require 'ido)
