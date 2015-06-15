@@ -20,6 +20,7 @@
 (define-key global-map (kbd "C-c r") 'vr/replace)
 (define-key global-map (kbd "C-c q") 'vr/query-replace)
 (define-key global-map (kbd "C-c m") 'vr/mc-mark)
+(define-key global-map (kbd "C-c i") 'iedit-mode)
 
 ;;; Servidor
 (setenv "EDITOR" "/usr/bin/emacsclient")
