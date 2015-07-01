@@ -17,3 +17,5 @@ session.*
 /home/.emacs.d/jabber-history/
 /home/.emacs.d/ido.last
 /home/.emacs.d/elpa/
+/home/.cask/
+/home/.emacs.d/auto-save-list/
