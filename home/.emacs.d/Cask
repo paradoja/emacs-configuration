@@ -51,6 +51,7 @@
 (depends-on "rvm")
 (depends-on "robe")
 (depends-on "ruby-hash-syntax")
+(depends-on "rspec-mode")
 
 ;;;; Scala
 (depends-on "scala-mode2")

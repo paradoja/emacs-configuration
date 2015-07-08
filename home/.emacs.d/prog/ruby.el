@@ -2,6 +2,7 @@
           (lambda ()
             (require 'ruby-electric)
             (ruby-electric-mode t)
+            (require 'rspec-mode)
             (ruby-tools-mode)
             (defun ruby-insert-end ()
               "Insert \"end\" at point and reindent current line."
@@ -25,3 +26,6 @@
 (rvm-use-default)
 (defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
   (rvm-activate-corresponding-ruby))
+
+(eval-after-load 'rspec-mode
+  '(rspec-install-snippets))
