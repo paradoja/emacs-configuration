@@ -17,7 +17,7 @@
 ;;;; Clojure
 (depends-on "clojure-mode")
 (depends-on "cider")
-(depends-on "ac-nrepl")
+(depends-on "ac-cider")
 
 ;;;; Cypher
 (depends-on "cypher-mode")
