@@ -53,6 +53,10 @@
 (depends-on "ruby-hash-syntax")
 (depends-on "rspec-mode")
 
+;;;; Rust
+(depends-on "rust-mode")
+(depends-on "flycheck-rust")
+
 ;;;; Scala
 (depends-on "scala-mode2")
 (depends-on "ensime")
