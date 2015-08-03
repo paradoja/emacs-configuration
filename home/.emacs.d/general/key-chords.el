@@ -12,6 +12,7 @@
   (key-chord-define-global (concat key "l") 'hl-line-mode)
   (key-chord-define-global (concat key "j") 'aace-jump-mode)
   (key-chord-define-global (concat key "k") 'ace-jump-char-mode)
-  (key-chord-define-global (concat key " ") 'whitespace-mode))
+  (key-chord-define-global (concat key " ") 'whitespace-mode)
+  (key-chord-define-global (concat key "s") 'subword-mode))
 
 (mapc #'set-chords-for-key key-chord-prefixes)
