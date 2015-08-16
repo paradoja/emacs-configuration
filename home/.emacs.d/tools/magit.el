@@ -1,4 +1,6 @@
 (require 'magit)
 
 (global-set-key (kbd "C-,") 'magit-status)
-(setq magit-last-seen-setup-instructions "1.4.0")
+(defvar magit-last-seen-setup-instructions "1.4.0")
+
+(add-hook 'git-gutter:update-hooks 'magit-revert-buffer-hook)
