@@ -25,6 +25,9 @@
 ;;; (n)ASM
 (load-file "~/.emacs.d/prog/nasm.el")
 
+;;; Python
+(load-file "~/.emacs.d/prog/python.el")
+
 ;;; Ruby, Rails && Co.
 (load-file "~/.emacs.d/prog/ruby.el")
 

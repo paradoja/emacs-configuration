@@ -22,3 +22,4 @@ session.*
 /home/.emacs.d/.mc-lists.elc
 /home/.emacs.d/places
 /home/.emacs.d/bookmarks
+/home/.emacs.d/ensime

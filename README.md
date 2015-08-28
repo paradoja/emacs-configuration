@@ -40,3 +40,10 @@ the following or similar is needed:
 (setq hipchat-auto-join                       '("room1" "room2"))
 (setq hipchat-password                        "...")
 ```
+
+If `elpy` is going to be run, this is needed:
+
+```bash
+pip install jedi flake8 importmagic autopep8 pyflakes
+```
+Make sure that `pyflake` is in the path.
