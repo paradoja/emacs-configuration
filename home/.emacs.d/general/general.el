@@ -109,7 +109,8 @@
             "yas"        ; yas/minor-mode
             "rt"         ; ruby-tools-mode
             "REl"        ; ruby-electric-mode
-            "MRev"))     ; magit-auto-revert-mode
+            "Guide"      ; guide-key-mode
+            ))
 (setq-default sml/col-number-format  "%3l")
 (setq-default sml/line-number-format "%3l")
 (setq-default sml/numbers-separator  "")
