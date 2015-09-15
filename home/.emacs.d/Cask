@@ -46,6 +46,9 @@
 ;;;; Python
 (depends-on "elpy")
 
+;;;; R
+(depends-on "ess")
+
 ;;;; Ruby
 (depends-on "ruby-mode")
 (depends-on "ruby-electric")
