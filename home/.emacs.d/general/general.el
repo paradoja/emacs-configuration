@@ -63,16 +63,24 @@
 ; (set-default-font "Inconsolata-13")
 (set-frame-font "Ubuntu Mono-13")
 
+;;; Dired + similar
+(add-hook 'dired-load-hook
+          '(lambda ()
+             (require 'dired-x)
+             (setq dired-omit-mode t)
+             (define-key dired-mode-map (kbd "C-c C-d i") 'dired-subtree-insert)
+             (define-key dired-mode-map (kbd "C-c C-d -") 'dired-subtree-remove)
+             (define-key dired-mode-map (kbd "C-c C-d x") 'direx:jump-to-directory)))
+(require 'projectile)
+(define-key projectile-mode-map (kbd "C-c p x") 'direx-project:jump-to-project-root)
+
 ;;; Comandos avanzados habilitados
 (put 'set-goal-column  'disabled nil); C-x C-n
 (put 'narrow-to-region 'disabled nil); C-x n n
 (put 'upcase-region    'disabled nil); C-x C-u;; M-u upcases word
 (put 'downcase-region  'disabled nil); C-x C-l;; M-l downcases word
-(add-hook 'dired-load-hook
-          '(lambda ()
-             (require 'dired-x)
-             (setq dired-omit-mode t)))
 (put 'dired-find-alternate-file 'disabled nil); dired a
+
 
 ;;; Ido http://emacslife.blogspot.com/2008/02/icicles.html
 (require 'ido)

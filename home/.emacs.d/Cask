@@ -92,6 +92,11 @@
 (depends-on "feature-mode")
 (depends-on "multiple-cursors")
 (depends-on "restclient")
+(depends-on "dired-filter")
+(depends-on "dired-subtree")
+(depends-on "dired-ranger")
+(depends-on "dired-narrow")
+(depends-on "direx")
 
 ;; General emacs tools
 (depends-on "evil")
