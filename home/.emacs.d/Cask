@@ -75,8 +75,6 @@
 (depends-on "ace-jump-mode")
 (depends-on "perspective")
 (depends-on "auto-complete")
-(depends-on "git-commit-mode")
-(depends-on "git-rebase-mode")
 (depends-on "magit")
 (depends-on "gist")
 (depends-on "projectile")
