@@ -43,6 +43,9 @@
 ;;;; Lisps
 (depends-on "paredit")
 
+;;;; Puppet
+(depends-on "puppet-mode")
+
 ;;;; Python
 (depends-on "elpy")
 
