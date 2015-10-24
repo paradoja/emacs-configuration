@@ -22,6 +22,10 @@
 ;;;; Cypher
 (depends-on "cypher-mode")
 
+;;;; Docker
+(depends-on "docker")
+(depends-on "dockerfile-mode")
+
 ;;;; Go
 (depends-on "go-mode")
 
