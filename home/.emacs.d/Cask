@@ -26,6 +26,9 @@
 (depends-on "docker")
 (depends-on "dockerfile-mode")
 
+;;;; GLSL
+(depends-on "glsl-mode")
+
 ;;;; Go
 (depends-on "go-mode")
 
