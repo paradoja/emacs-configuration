@@ -131,3 +131,6 @@
 ;; Libraries
 (depends-on "f")    ; Directory and file api
 (depends-on "dash") ; Modern list library
+
+;; Extra
+(depends-on "zone-nyan") ; Nyan cat zone
