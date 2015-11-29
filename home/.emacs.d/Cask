@@ -108,11 +108,9 @@
 
 ;; General emacs tools
 (depends-on "evil")
-(depends-on "smex")
 (depends-on "undo-tree")
 (depends-on "key-chord")
 (depends-on "w3")
-(depends-on "helm")
 (depends-on "expand-region")
 (depends-on "ecb")
 (depends-on "tabulated-list")
@@ -130,6 +128,12 @@
 (depends-on "guide-key")
 (depends-on "discover-my-major")
 (depends-on "visual-regexp")
+
+;; General emacs tools: Helm
+(depends-on "helm")
+(depends-on "helm-projectile")
+(depends-on "helm-ag")
+(depends-on "helm-ls-git")
 
 ;; Libraries
 (depends-on "f")    ; Directory and file api

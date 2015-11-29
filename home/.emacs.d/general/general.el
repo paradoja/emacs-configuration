@@ -5,16 +5,19 @@
 ;;; Cambios de configuraciones de teclas
 (global-set-key "\C-w" 'backward-kill-word)
 (global-set-key "\C-x\C-k" 'kill-region)
-(require 'smex) ; Ido for M-x
-(global-set-key "\M-x" 'smex)
-(global-set-key "\C-xm" 'smex)
-(global-set-key "\C-x\C-m" 'smex)
-(global-set-key "\C-c\C-m" 'smex-major-mode-commands)
+(global-set-key "\C-x\C-f" 'helm-find-files)
+(global-set-key "\M-x" 'helm-M-x)
+(global-set-key "\C-xm" 'helm-M-x)
+(global-set-key "\C-x\C-m" 'helm-M-x)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) ; M-x estándar
-(global-set-key (kbd "C-c C-o") 'occur) ; tb. M-s o durante isearch
-(global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-set-key (kbd "C-c C-o") 'helm-occur) ; tb. M-s o durante isearch
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
+(global-set-key (kbd "C-x C-b") 'helm-buffers-list)
 (define-key global-map (kbd "RET") 'newline-and-indent)
 (global-set-key (kbd "C-h C-m") 'discover-my-major)
+(require 'helm-mode)
+(setq helm-completion-in-region-fuzzy-match t)
+(helm-mode 1)
 (require 'visual-regexp)
 (setq vr/match-separator-string ">>")
 (define-key global-map (kbd "C-c r") 'vr/replace)
@@ -81,15 +84,6 @@
 (put 'downcase-region  'disabled nil); C-x C-l;; M-l downcases word
 (put 'dired-find-alternate-file 'disabled nil); dired a
 
-
-;;; Ido http://emacslife.blogspot.com/2008/02/icicles.html
-(require 'ido)
-(ido-mode t)
-(ido-everywhere t)
-(setq ido-enable-flex-matching t)
-(setq ido-use-filename-at-point 'guess)
-(setq ido-auto-merge-work-directories-length -1)
-
 ;;; Uniquify, cambios en cómo mostrar los buffers http://trey-jackson.blogspot.com.es/2008/01/emacs-tip-11-uniquify.html
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'reverse)
@@ -118,6 +112,7 @@
             "rt"         ; ruby-tools-mode
             "REl"        ; ruby-electric-mode
             "Guide"      ; guide-key-mode
+            "Helm"       ; helm
             ))
 (setq-default sml/col-number-format  "%3l")
 (setq-default sml/line-number-format "%3l")
