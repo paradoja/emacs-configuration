@@ -67,13 +67,11 @@
 (set-frame-font "Ubuntu Mono-13")
 
 ;;; Dired + similar
-(add-hook 'dired-load-hook
-          '(lambda ()
-             (require 'dired-x)
-             (setq dired-omit-mode t)
-             (define-key dired-mode-map (kbd "C-c C-d i") 'dired-subtree-insert)
-             (define-key dired-mode-map (kbd "C-c C-d -") 'dired-subtree-remove)
-             (define-key dired-mode-map (kbd "C-c C-d x") 'direx:jump-to-directory)))
+(require 'dired-x)
+(setq dired-omit-mode t)
+(define-key dired-mode-map (kbd "C-c C-d i") 'dired-subtree-insert)
+(define-key dired-mode-map (kbd "C-c C-d -") 'dired-subtree-remove)
+(define-key dired-mode-map (kbd "C-c C-d x") 'direx:jump-to-directory)
 (require 'projectile)
 (define-key projectile-mode-map (kbd "C-c p x") 'direx-project:jump-to-project-root)
 
