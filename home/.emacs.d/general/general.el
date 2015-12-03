@@ -49,6 +49,7 @@
 (require 'guide-key)
 (setq guide-key/guide-key-sequence t) ; Everything
 (guide-key-mode 1)
+(setq set-mark-command-repeat-pop t) ; C-u C-Space C-Space... C-Space
 
 ;; Automáticamente marcar como ejecutable scripts
 (add-hook 'after-save-hook
