@@ -132,6 +132,7 @@
 (depends-on "guide-key")
 (depends-on "discover-my-major")
 (depends-on "visual-regexp")
+(depends-on "repl-toggle")
 
 ;; General emacs tools: Helm
 (depends-on "helm")

@@ -1,5 +1,8 @@
 ;;; Custom conf.
-(setq custom-file "~/.emacs.d/general/custom.el")
+(require 'f)
+(load (file-truename (f-join (f-dirname (f-this-file))
+                             "config-utils")))
+(defconst custom-file (file-truename "custom"))
 (load custom-file 'noerror)
 
 ;;; Cambios de configuraciones de teclas

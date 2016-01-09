@@ -1,5 +1,4 @@
 (require 'dash)
-(require 'browse-kill-ring)
 
 (setq browse-kill-ring-highlight-current-entry t
       browse-kill-ring-highlight-inserted-item 'pulse)
