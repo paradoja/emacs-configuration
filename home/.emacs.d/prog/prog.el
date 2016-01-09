@@ -25,6 +25,9 @@
 ;;; (n)ASM
 (load-file "~/.emacs.d/prog/nasm.el")
 
+;;; Purescript
+(load-file "~/.emacs.d/prog/purescript.el")
+
 ;;; Python
 (load-file "~/.emacs.d/prog/python.el")
 
