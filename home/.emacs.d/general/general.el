@@ -27,6 +27,7 @@
 (define-key global-map (kbd "C-c q") 'vr/query-replace)
 (define-key global-map (kbd "C-c m") 'vr/mc-mark)
 (define-key global-map (kbd "C-c i") 'iedit-mode)
+(define-key global-map (kbd "C-s") 'swiper-helm)
 
 ;;; Servidor
 (setenv "EDITOR" "/usr/bin/emacsclient")
@@ -74,7 +75,10 @@
 (require 'dired-x)
 (setq dired-omit-mode t)
 (define-key dired-mode-map (kbd "C-c C-d i") 'dired-subtree-insert)
+(define-key dired-mode-map (kbd "C-c C-d C-i") 'dired-subtree-insert)
 (define-key dired-mode-map (kbd "C-c C-d -") 'dired-subtree-remove)
+(define-key dired-mode-map (kbd "C-c C-d o") 'dired-subtree-remove)
+(define-key dired-mode-map (kbd "C-c C-d C-o") 'dired-subtree-remove)
 (define-key dired-mode-map (kbd "C-c C-d x") 'direx:jump-to-directory)
 (require 'projectile)
 (define-key projectile-mode-map (kbd "C-c p x") 'direx-project:jump-to-project-root)
