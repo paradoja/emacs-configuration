@@ -14,5 +14,6 @@
    rcirc
    tiny                  ; Quickly gen. linear ranges
    twit                  ; Twittering mode
+   symon
    window-navigation     ; Window numbering and chumpy windows
    yasnippets))
