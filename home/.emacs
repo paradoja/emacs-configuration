@@ -1,4 +1,5 @@
-;;; Cask
+(package-initialize)
+
 (if (file-exists-p "~/.cask/cask.el")
     (require 'cask "~/.cask/cask.el")
   (require 'cask "/usr/local/share/emacs/site-lisp/cask.el"))
