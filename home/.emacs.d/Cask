@@ -95,7 +95,6 @@
 (depends-on "iedit")
 (depends-on "yasnippet")
 (depends-on "highlight-indentation")
-(depends-on "ack-and-a-half")
 (depends-on "ag")
 (depends-on "wgrep")
 (depends-on "wgrep-ack")
@@ -109,6 +108,7 @@
 (depends-on "dired-ranger")
 (depends-on "dired-narrow")
 (depends-on "direx")
+(depends-on "git-link")
 
 ;; General emacs tools
 (depends-on "evil")
