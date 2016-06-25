@@ -36,10 +36,6 @@
 ;;;; Puppet
 (depends-on "puppet-mode")
 
-;;;; Purescript
-(depends-on "purescript-mode")
-(depends-on "psci")
-
 ;;;; Python
 (depends-on "elpy")
 
@@ -115,7 +111,6 @@
 (depends-on "guide-key")
 (depends-on "discover-my-major")
 (depends-on "visual-regexp")
-(depends-on "repl-toggle")
 
 ;; General emacs tools: Helm
 (depends-on "helm")
