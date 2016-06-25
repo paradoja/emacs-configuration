@@ -1,3 +1,7 @@
+(require 'use-package)
+
+(use-package paredit)
+
 (defun pdox-new-line-and-indent (&optional arg)
   (interactive "p")
   (newline arg)

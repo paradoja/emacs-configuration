@@ -1,3 +1,3 @@
-(require use-package)
+(require 'use-package)
 
 (use-package symon)

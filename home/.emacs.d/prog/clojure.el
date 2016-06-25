@@ -1,8 +1,17 @@
-; General
-(add-hook 'clojure-mode-hook
-           (lambda () (paredit-mode +1)))
+(require 'use-package)
 
-(add-hook 'cider-mode-hook #'eldoc-mode)
+(use-package clojure-mode
+  :init
+  (add-hook 'clojure-mode-hook
+            (lambda () (paredit-mode +1))))
+
+(use-package cider
+  :init
+  (add-hook 'cider-mode-hook #'eldoc-mode))
+
+
+(use-package ac-cider)
+
 
 
 ;; ;; highlight expression on eval
