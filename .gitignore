@@ -23,3 +23,4 @@ session.*
 /home/.emacs.d/places
 /home/.emacs.d/bookmarks
 /home/.emacs.d/ensime
+/home/.emacs.d/network-security.data
