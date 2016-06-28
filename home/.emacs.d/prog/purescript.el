@@ -1,4 +1,9 @@
+(require 'use-package)
 (require 'repl-toggle)
-(require 'psci)
-(add-hook 'purescript-mode-hook 'inferior-psci-mode)
-(add-to-list 'rtog/mode-repl-alist '(purescript-mode . psci))
+
+(use-package purescript-mode
+  :init
+  (add-hook 'prog-mode-hook 'rainbow-delimiters-mode))
+(use-package psci
+  :init
+  (add-to-list 'rtog/mode-repl-alist '(purescript-mode . psci)))

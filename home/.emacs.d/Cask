@@ -3,21 +3,12 @@
 (source marmalade)
 
 ;;; Programming tools
-(depends-on "web-mode")
 (depends-on "haml-mode")
 (depends-on "sass-mode")
 (depends-on "scss-mode")
 (depends-on "yaml-mode")
 (depends-on "flycheck")
 (depends-on "flycheck-cask")
-
-;;;; Coffee
-(depends-on "coffee-mode")
-
-;;;; Clojure
-(depends-on "clojure-mode")
-(depends-on "cider")
-(depends-on "ac-cider")
 
 ;;;; Cypher
 (depends-on "cypher-mode")
@@ -32,11 +23,6 @@
 ;;;; Go
 (depends-on "go-mode")
 
-;;;; Haskell
-(depends-on "haskell-mode")
-(depends-on "ghci-completion")
-(depends-on "shm")
-
 ;;;; Io
 (depends-on "io-mode")
 (depends-on "io-mode-inf")
@@ -47,15 +33,8 @@
 ;;;; JS
 (depends-on "js2-mode")
 
-;;;; Lisps
-(depends-on "paredit")
-
 ;;;; Puppet
 (depends-on "puppet-mode")
-
-;;;; Purescript
-(depends-on "purescript-mode")
-(depends-on "psci")
 
 ;;;; Python
 (depends-on "elpy")
@@ -132,7 +111,6 @@
 (depends-on "guide-key")
 (depends-on "discover-my-major")
 (depends-on "visual-regexp")
-(depends-on "repl-toggle")
 
 ;; General emacs tools: Helm
 (depends-on "helm")

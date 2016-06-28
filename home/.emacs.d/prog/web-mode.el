@@ -1,3 +1,7 @@
-(add-to-list 'auto-mode-alist '("\\.tpl\\|\\.php" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.erb" . web-mode))
-(add-to-list 'ac-modes 'web-mode)
+(require 'use-package)
+(require 'auto-complete)
+
+(use-package web-mode
+  :mode "\\.tpl\\|\\.php|\\.erb|\\.htm|\\.html"
+  :init
+  (add-to-list 'ac-modes 'web-mode))
