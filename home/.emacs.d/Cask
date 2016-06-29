@@ -69,7 +69,6 @@
 (depends-on "perspective")
 (depends-on "auto-complete")
 (depends-on "magit")
-(depends-on "gist")
 (depends-on "projectile")
 (depends-on "iedit")
 (depends-on "yasnippet")
