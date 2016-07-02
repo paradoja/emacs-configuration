@@ -5,3 +5,4 @@
   :init
   (add-to-list 'rtog/mode-repl-alist '(purescript-mode . psci)))
 (use-package alchemist)
+(use-package ac-alchemist)
