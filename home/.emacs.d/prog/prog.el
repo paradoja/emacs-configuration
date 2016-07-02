@@ -7,6 +7,7 @@
    coffee     ; CoffeScript
    clisp      ; Common Lisp
    elisp
+   elixir
    haskell
    java
    nasm       ; (n)ASM

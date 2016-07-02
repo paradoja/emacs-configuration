@@ -1,4 +1,7 @@
+(require 'use-package)
+
 (require 'org)
+(use-package ox-gfm)
 
 (org-babel-do-load-languages
  'org-babel-load-languages
