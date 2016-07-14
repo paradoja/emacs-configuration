@@ -2,6 +2,7 @@
 
 (load-configurations
  '(ace-jump-mode
+   email
    eww
    flycheck
    highlight-indentation
