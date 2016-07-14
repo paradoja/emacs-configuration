@@ -126,6 +126,7 @@
 (setq-default sml/col-number-format  "%3c")
 
 ;;; Cambios en paquetes generales
+(use-package ace-jump-mode)
 (load "~/.emacs.d/general/key-chords")
 (load "~/.emacs.d/general/browse-kill-ring")
 

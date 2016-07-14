@@ -65,7 +65,6 @@
 (depends-on "geiser")
 
 ;;; General editing, programming and project tools
-(depends-on "ace-jump-mode")
 (depends-on "perspective")
 (depends-on "auto-complete")
 (depends-on "magit")
@@ -79,7 +78,6 @@
 (depends-on "wgrep-ag")
 (depends-on "markdown-mode")
 (depends-on "feature-mode")
-(depends-on "multiple-cursors")
 (depends-on "restclient")
 (depends-on "dired-filter")
 (depends-on "dired-subtree")

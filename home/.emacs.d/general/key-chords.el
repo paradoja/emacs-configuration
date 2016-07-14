@@ -10,8 +10,9 @@
   (key-chord-define-global (concat key "v") 'evil-mode)
   (key-chord-define-global (concat key "h") 'toggle-hightlight-indentation-mode)
   (key-chord-define-global (concat key "l") 'hl-line-mode)
-  (key-chord-define-global (concat key "j") 'aace-jump-mode)
+  (key-chord-define-global (concat key "j") 'ace-jump-mode)
   (key-chord-define-global (concat key "k") 'ace-jump-char-mode)
+  (key-chord-define-global (concat key "c") 'ace-mc-add-multiple-cursors)
   (key-chord-define-global (concat key " ") 'whitespace-mode)
   (key-chord-define-global (concat key "s") 'subword-mode))
 
