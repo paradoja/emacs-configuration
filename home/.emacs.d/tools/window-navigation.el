@@ -1,3 +1,7 @@
+(require 'use-package)
+(use-package window-jump)
+(use-package window-numbering)
+(use-package rotate)
 (require 'dash)
 (require 'window-jump)
 (require 'window-numbering)

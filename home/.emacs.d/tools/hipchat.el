@@ -1,3 +1,5 @@
+(require 'use-package)
+(use-package jabber)
 (require 'jabber)
 (require 'notifications)
 

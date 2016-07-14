@@ -1,3 +1,6 @@
+(require 'use-package)
+(use-package emacs-eclim)
+
 (require 'eclim)
 (require 'eclimd)
 (defvar eclim-possible-workspaces '("~/curro"))

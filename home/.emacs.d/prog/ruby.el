@@ -1,3 +1,5 @@
+(require 'use-package)
+
 (add-hook 'ruby-mode-hook
           (lambda ()
             (require 'ruby-electric)
@@ -24,9 +26,11 @@
 
 (add-hook 'robe-mode-hook 'robe-ac-setup)
 
+(use-package rvm)
 (rvm-use-default)
 (defadvice inf-ruby-console-auto (before activate-rvm-for-robe activate)
   (rvm-activate-corresponding-ruby))
 
+(use-package rspec-mode)
 (eval-after-load 'rspec-mode
   '(rspec-install-snippets))

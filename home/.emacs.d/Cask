@@ -7,8 +7,6 @@
 (depends-on "sass-mode")
 (depends-on "scss-mode")
 (depends-on "yaml-mode")
-(depends-on "flycheck")
-(depends-on "flycheck-cask")
 
 ;;;; Cypher
 (depends-on "cypher-mode")
@@ -27,17 +25,11 @@
 (depends-on "io-mode")
 (depends-on "io-mode-inf")
 
-;;;; Java
-(depends-on "emacs-eclim")
-
 ;;;; JS
 (depends-on "js2-mode")
 
 ;;;; Puppet
 (depends-on "puppet-mode")
-
-;;;; Python
-(depends-on "elpy")
 
 ;;;; R
 (depends-on "ess")
@@ -47,30 +39,20 @@
 (depends-on "ruby-electric")
 (depends-on "inf-ruby")
 (depends-on "ruby-tools")
-(depends-on "rvm")
 (depends-on "robe")
 (depends-on "ruby-hash-syntax")
-(depends-on "rspec-mode")
 
 ;;;; Rust
 (depends-on "rust-mode")
 (depends-on "flycheck-rust")
-
-;;;; Scala
-(depends-on "scala-mode2")
-(depends-on "ensime")
-(depends-on "sbt-mode")
 
 ;;;; Scheme
 (depends-on "geiser")
 
 ;;; General editing, programming and project tools
 (depends-on "perspective")
-(depends-on "auto-complete")
-(depends-on "magit")
 (depends-on "projectile")
 (depends-on "iedit")
-(depends-on "yasnippet")
 (depends-on "highlight-indentation")
 (depends-on "ag")
 (depends-on "wgrep")
@@ -88,33 +70,16 @@
 
 ;; General emacs tools
 (depends-on "evil")
-(depends-on "undo-tree")
-(depends-on "key-chord")
 (depends-on "w3")
 (depends-on "expand-region")
 (depends-on "ecb")
 (depends-on "tabulated-list")
-(depends-on "jabber")
 (depends-on "twittering-mode")
-(depends-on "smart-mode-line")
-(depends-on "rainbow-delimiters")
 (depends-on "w3m")
-(depends-on "window-numbering")
-(depends-on "window-jump")
-(depends-on "rotate")
 (depends-on "git-gutter")
 (depends-on "hydra")
 (depends-on "browse-kill-ring")
-(depends-on "guide-key")
 (depends-on "discover-my-major")
-(depends-on "visual-regexp")
-
-;; General emacs tools: Helm
-(depends-on "helm")
-(depends-on "helm-projectile")
-(depends-on "helm-ag")
-(depends-on "helm-ls-git")
-(depends-on "swiper-helm")
 
 ;; Libraries
 (depends-on "f")    ; Directory and file api

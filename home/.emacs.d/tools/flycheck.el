@@ -1,3 +1,6 @@
+(require 'use-package)
+(use-package flycheck)
+
 (eval-after-load 'flycheck
   (progn
     '(add-hook 'flycheck-mode-hook #'flycheck-cask-setup)

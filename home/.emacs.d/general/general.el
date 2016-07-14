@@ -1,3 +1,5 @@
+(require 'use-package)
+
 ;;; Custom conf.
 (require 'f)
 (load (file-truename (f-join (f-dirname (f-this-file))
@@ -18,9 +20,15 @@
 (global-set-key (kbd "C-x C-b") 'helm-buffers-list)
 (define-key global-map (kbd "RET") 'newline-and-indent)
 (global-set-key (kbd "C-h C-m") 'discover-my-major)
+(use-package helm) ; TODO move to helm conf?
+(use-package helm-projectile)
+(use-package helm-ag)
+(use-package helm-ls-git)
+(use-package swiper-helm)
 (require 'helm-mode)
 (setq helm-completion-in-region-fuzzy-match t)
 (helm-mode 1)
+(use-package visual-regexp)
 (require 'visual-regexp)
 (setq vr/match-separator-string ">>")
 (define-key global-map (kbd "C-c r") 'vr/replace)
@@ -39,9 +47,12 @@
 (show-paren-mode)
 (column-number-mode 1)
 (add-hook 'before-save-hook 'delete-trailing-whitespace) ; no whitespace
+(use-package undo-tree)
 (global-undo-tree-mode)
+(use-package key-chord)
 (key-chord-mode 1)
 (setq-default truncate-lines t)
+(use-package auto-complete)
 (global-auto-complete-mode 1)
 ; Enhanced rectangle edition, global mark mode and easy register use
 (cua-selection-mode t)
@@ -50,6 +61,7 @@
 (winner-mode 1) ; C-c ←, C-c →
 (setq visual-line-fringe-indicators ; Arrows in visual-line-mode
       '(left-curly-arrow right-curly-arrow))
+(use-package guide-key)
 (require 'guide-key)
 (setq guide-key/guide-key-sequence t) ; Everything
 (guide-key-mode 1)
@@ -98,6 +110,7 @@
 (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers
 
 ;;; Smart Mode Line
+(use-package smart-mode-line)
 (require 'smart-mode-line)
 (require 'smart-mode-line-dark-theme)
 (sml/setup)
