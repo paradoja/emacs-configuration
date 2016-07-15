@@ -1,4 +1,5 @@
 (require 'use-package)
+(require 's) ; TODO: use-package it
 
 ;;; For downloading messages mbsync (outside emacs) is used to sync
 ;;; messages between IMAP accounts and a local Maildir directory. Then
@@ -13,7 +14,8 @@
 ;;;
 ;;; In hello view
 ;;;  `-> G reload emails (mbsync gmail && notmuch new from bash)
-;;;  `-> j jump to standard places
+;;;  `-> j jump to predefined places
+;;;  `-> J jump to standard places
 ;;;  `-> m write email
 ;;;      `-> C-c C-C send email
 ;;;
@@ -21,13 +23,13 @@
 ;;;  `-> R reply
 ;;;  `-> F forward
 
-;;; TODO: Signature
+;;; TODO: Signature, easy un-inboxing + un-unreading, easy unreading
 
-(use-package notmuch
-  :bind (:map notmuch-hello-mode-map
-         ("R" . reload-email)))
-
-(require 's) ; TODO: use-package it
+(defun notmuch-paradojas-jump-search ()
+  (interactive)
+  (let ((action-map '(("i" "inbox" (lambda () (notmuch-tree "is:inbox")))
+                      ("u" "unread" (lambda () (notmuch-tree "is:unread"))))))
+        (notmuch-jump action-map "Search: ")))
 
 ; TODO : this should probably not be here
 (defmacro run-after-process (process-list func)
@@ -39,6 +41,7 @@
                                  ,func)))))
 
 (defun reload-email ()
+  "Reload, reindex and refresh the emails and buffer"
   (interactive)
   (run-after-process (start-process "sync email" "*Messages*" "mbsync" "gmail")
                      (run-after-process
@@ -46,6 +49,14 @@
                       (progn
                         (notmuch-poll-and-refresh-this-buffer)
                         (message "Email updated")))))
+
+(use-package notmuch
+  :bind (:map notmuch-hello-mode-map
+              ("R" . reload-email)
+              ("j" . notmuch-paradojas-jump-search)
+              ("J" . notmuch-jump-search)))
+(require 'notmuch)
+(require 'notmuch-lib)
 
 (setq notmuch-search-oldest-first nil ; newer first
       message-citation-line-format "On %a, %d %b %Y, %f wrote:"
