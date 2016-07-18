@@ -27,8 +27,8 @@
 
 (defun notmuch-paradojas-jump-search ()
   (interactive)
-  (let ((action-map '(("i" "inbox" (lambda () (notmuch-tree "is:inbox")))
-                      ("u" "unread" (lambda () (notmuch-tree "is:unread"))))))
+  (let ((action-map '(("u" "unread" (lambda () (notmuch-tree "is:unread")))
+                      ("i" "inbox" (lambda () (notmuch-tree "is:inbox"))))))
         (notmuch-jump action-map "Search: ")))
 
 ; TODO : this should probably not be here

@@ -82,6 +82,9 @@
 (load-theme 'tango-2-modified t)
 ; (set-default-font "Inconsolata-13")
 (set-frame-font "Ubuntu Mono-13")
+(set-fontset-font
+ t 'symbol
+ (font-spec :family "Symbola") nil 'prepend) ; emojis!
 
 ;;; Dired + similar
 (require 'dired-x)
