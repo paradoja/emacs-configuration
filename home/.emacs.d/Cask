@@ -52,7 +52,6 @@
 ;;; General editing, programming and project tools
 (depends-on "perspective")
 (depends-on "projectile")
-(depends-on "iedit")
 (depends-on "highlight-indentation")
 (depends-on "ag")
 (depends-on "wgrep")

@@ -34,6 +34,7 @@
 (define-key global-map (kbd "C-c r") 'vr/replace)
 (define-key global-map (kbd "C-c q") 'vr/query-replace)
 (define-key global-map (kbd "C-c m") 'vr/mc-mark)
+(use-package iedit)
 (define-key global-map (kbd "C-c i") 'iedit-mode)
 (define-key global-map (kbd "C-s") 'swiper-helm)
 
